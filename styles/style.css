@@ -1,0 +1,84 @@
+header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#site-logo a {
+  color: rgb(247, 156, 65);
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  color: rgb(243, 157, 66);
+  font-size: 20px;
+  padding: 12px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body  {
+    background-color: rgb(40, 37, 34);
+    margin: 0;
+}
+
+main h1 {
+  text-align: center;
+  color: rgb(242, 157, 68);
+  font-size: 44px;
+  margin: 0px;
+}
+
+#order-content {
+  width: 800px;
+  padding: 20px 20px;
+  margin: 40px auto;
+}
+
+#food-items {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;;
+}
+
+.food-item {
+  width: 100%;
+  background-color: rgb(255, 229, 197);
+  border-radius: 10px;
+  margin: 0 15px;
+}
+
+.food-item img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-item a{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(234, 147, 35);
+    padding: 4px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
