@@ -1,84 +1,99 @@
-header {
-  background-color: black;
-  width: 100%;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(44, 41, 38);
+  margin: 0;
+}
+
+a {
+  text-decoration: none; 
+}
+
+#main-header {
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  box-sizing: border-box;
-  margin-bottom: 50px;
+  background-color: rgb(29, 26, 24);
+  padding: 0 20px;
 }
 
-header a {
-  text-decoration: none;
-}
-
-#site-logo a {
-  color: rgb(247, 156, 65);
+#logo {
+  color: rgb(238, 164, 80);
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
 }
 
-nav a {
-  color: rgb(243, 157, 66);
-  font-size: 20px;
-  padding: 12px;
-}
-
-nav ul {
+#main-header ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-body  {
-    background-color: rgb(40, 37, 34);
-    margin: 0;
+#main-header li {
+  margin: 0 16px;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 20px;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
 }
 
 main h1 {
   text-align: center;
-  color: rgb(242, 157, 68);
-  font-size: 44px;
+  color: rgb(238, 164, 80);
+  font-size: 48px;
   margin: 0px;
 }
 
-#order-content {
+#latest-products {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* #order-content {
   width: 800px;
   padding: 20px 20px;
   margin: 40px auto;
-}
+} */
 
-#food-items {
-  width: 90%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+#latest-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
   padding: 0;
-  text-align: center;;
+  margin: 0;
 }
 
 .food-item {
-  width: 100%;
-  background-color: rgb(255, 229, 197);
-  border-radius: 10px;
-  margin: 0 15px;
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .food-item img {
-  height: 200px;
+  height: 240px;
   width: 100%;
   object-fit: cover;
 }
 
-.food-item a{
-    text-decoration: none;
-    color: white;
-    background-color:rgb(234, 147, 35);
-    padding: 4px 10px;
-    display: inline-block;
-    margin-bottom: 10px;
+.food-item-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(228, 175, 44);
+  color: white;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+
+.btn:hover {
+  background-color: rgb(221, 134, 34);
 }
